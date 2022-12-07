@@ -1,0 +1,49 @@
+h1 {
+  text-align: center;
+  border-bottom: 3px solid #000;
+}
+
+.character-list {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  margin: 0 10px;
+  gap: 10px;
+}
+
+.character {
+  width: 20vw;
+  height: 15em;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+  background: linear-gradient(
+    0deg,
+    rgba(61, 49, 38, 1) 0%,
+    rgba(255, 255, 255, 0) 35%
+  );
+  overflow: hidden;
+  border-radius: 1em;
+}
+
+.character:hover {
+  background: linear-gradient(
+    0deg,
+    rgba(61, 49, 38, 1) 7%,
+    rgba(255, 255, 255, 0) 100%
+  );
+}
+.character img {
+  width: 100%;
+  border-radius: 1em;
+  position: relative;
+  z-index: -1;
+}
+
+.character-info {
+  position: absolute;
+  bottom: 10px;
+  left: 10px;
+  color: white;
+}
